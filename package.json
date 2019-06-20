@@ -1,0 +1,47 @@
+{
+  "name": "use-smooth",
+  "version": "1.0.0",
+  "description": "A react hook for making state changes smooth",
+  "main": "./lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint src",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run lint && npm run build"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamin4life/use-smooth.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Zamin <info@zamin.link>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zamin4life/use-smooth/issues"
+  },
+  "homepage": "https://github.com/zamin4life/use-smooth#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.5.0",
+    "cross-env": "^5.1.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "react": "^16.8.6"
+  }
+}
